@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://demo.trianh.edu.vn/cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="YRpUZtbORLCQyvQIrzQh3Xj2C7Zf8JKRM7efSOMF">
+	<title>
+		Shop
+	</title>
+	<!-- Scripts -->
+	<script src="./Cart_files/app.js.download">
+	</script>
+	<!-- Fonts -->
+	<link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+		<link href="./Cart_files/css" rel="stylesheet">
+	<!-- Styles -->
+	<link href="./Cart_files/app.css" rel="stylesheet">
+	<link href="./Cart_files/style.css" rel="stylesheet">
+	<!-- font-awesome -->
+	<link href="./Cart_files/font-awesome.min.css" rel="stylesheet">
+	<!---TinyMCE Editor-->
+	<script src="./Cart_files/tinymce.min.js.download" referrerpolicy="origin"></script>	
+	<!-- Glidejs -->
+	<link rel="stylesheet" href="./Cart_files/glide.core.css">
+	<link rel="stylesheet" href="./Cart_files/glide.theme.css">
+	<script src="./Cart_files/glide.min.js.download">
+	</script>
+</head>
+<body>
+		<!---NAVBAR----->
+		<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+			<div class="container">
+				<a class="navbar-brand" href="http://demo.trianh.edu.vn/">
+					Shop
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Left Side Of Navbar -->
+					<ul class="navbar-nav mr-auto">
+					</ul>
+					<!-- Right Side Of Navbar -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="http://demo.trianh.edu.vn/">
+								Trang chủ
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://demo.trianh.edu.vn/listing.html">
+								Sản phẩm
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="http://demo.trianh.edu.vn/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Cửa hàng
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="http://demo.trianh.edu.vn/shop/1">
+									Số 5 Hoàng Quốc Việt
+								</a>
+								<a class="dropdown-item" href="http://demo.trianh.edu.vn/shop/2">
+									Số 12 Nguyễn Trãi
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://demo.trianh.edu.vn/contact.html">
+								Liên hệ
+							</a>
+						</li>
+						<!-- Authentication Links -->
+						<li class="nav-item">
+							<a class="nav-link" href="http://demo.trianh.edu.vn/login">
+								Login
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="http://demo.trianh.edu.vn/welcome/en">
+								<img src="./Cart_files/en.png" style="height:30px;margin: 5px;">
+							</a>
+							<a href="http://demo.trianh.edu.vn/welcome/vn">
+								<img src="./Cart_files/vn.png" style="height:30px;margin: 5px;">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://demo.trianh.edu.vn/cart.html">
+								<i class="fa fa-cart-plus" style="font-size:1.5rem">
+									<span class="cart_number">
+										20
+									</span>
+								</i>
+							</a>
+						</li>
+						<a class="nav-link" href="http://demo.trianh.edu.vn/cart.html">
+						</a>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<!---CART--->
+		<div id="cart" class="container">
+			<div class="row">
+				<div class="col-md-3 d-none d-lg-block" style="margin-top:50px;">
+					<div class="container" id="mini_cart" style="border:3px var(--red) solid;">
+						<h3 style="line-height: 50px;text-align:center">
+							GIỎ HÀNG
+						</h3>
+						<table class="table table-stripped">
+							<tbody><tr>
+								<td>
+									Tổng tiền
+								</td>
+								<td class="cart_subtotal">
+									500.000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Thuế
+								</td>
+								<td class="cart_tax">
+									50.000
+								</td>
+							</tr>
+							<tr style="border-top:2px var(--red) solid; font-size:1.2rem;">
+								<td>
+									Tổng tiền
+								</td>
+								<td class="cart_total">
+									530.000
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="container-fluid text-center">
+						<h2 class="section-title">
+							GIỎ HÀNG
+						</h2>
+					</div>
+					<div class="container-fluid text-center">
+						<img src="./Cart_files/flower_string.png" width="30%">
+					</div>
+					<div class="container">
+						<table class="table table-stripped">
+							<tbody><tr style="font-size: 1rem;
+							background-color: var(--red);
+							color: white;">
+							<th style="width:50%">
+								Mặt hàng
+							</th>
+							<th style="width:15%">
+								Số lượng
+							</th>
+							<th style="width:15%">
+								Đơn giá
+							</th>
+							<th style="width:20%">
+								Thành tiền
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="cart-info">
+									<img src="./Cart_files/hoa1.jpg" alt="" style="width:4rem; margin-right:20px;float:left;">
+									<div>
+										<span style="font-size:1.2rem;">
+											Bambi Print Mini Backpack
+										</span>
+										<br>
+										<span>
+											Giá: 450.000đ
+										</span>
+										<br>
+										<a href="http://demo.trianh.edu.vn/cart.html#">
+											Xóa
+										</a>
+									</div>
+								</div>
+							</td>
+							<td>
+								<input type="text" id="item_1" value="2" class="form-control  cart_item_quantity" style="    text-align: center;
+								width: 3rem;">
+							</td>
+							<td id="price_item_1">
+								450.000
+							</td>
+							<td id="total_item_1">
+								900.000
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="cart-info">
+									<img src="./Cart_files/hoa1.jpg" alt="" style="width:4rem; margin-right:20px;float:left;">
+									<div>
+										<span style="font-size:1.2rem;">
+											Bambi Print Mini Backpack
+										</span>
+										<br>
+										<span>
+											Giá: 450.000đ
+										</span>
+										<br>
+										<a href="http://demo.trianh.edu.vn/cart.html#">
+											Xóa
+										</a>
+									</div>
+								</div>
+							</td>
+							<td>
+								<input type="text" id="item_2" value="2" class="form-control cart_item_quantity" style="    text-align: center;
+								width: 3rem;">
+							</td>
+							<td id="price_item_2">
+								450.000
+							</td>
+							<td id="total_item_2">
+								900.000
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+							</td>
+							<td class="text-right" style="border-top: 2px var(--red) solid;">
+								Tổng tiền
+							</td>
+							<td style="font-weight:900;border-top: 2px var(--red) solid;" class="cart_subtotal">
+								500.000
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="border:unset;">
+							</td>
+							<td class="text-right">
+								Thuế
+							</td>
+							<td style="font-weight:900;" class="cart_tax">
+								50.000
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="border:unset;">
+							</td>
+							<td class="text-right">
+								Tổng tiền
+							</td>
+							<td style="font-weight:900;" class="cart_total">
+								530.000
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+							</td>
+							<td style="font-weight:900;">
+								<button class="btn btn-danger">
+									Thanh toán
+								</button>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!---PARTNER----->
+
+		<div class="container">
+			<section class="section brands">
+				<div class="container-fluid text-center">
+					<h2 class="section-title">
+						Các đối tác
+					</h2>
+					<span>
+						Chọn lựa từ các thương hiệu sản phẩm cao cấp và tiết kiệm nhất
+					</span>
+				</div>
+				<div class="container-fluid text-center">
+					<img src="./Cart_files/flower_string.png" width="30%">
+				</div>
+				<div class="brand-layout container">
+					<div class="glide glide--ltr glide--carousel glide--swipeable" id="glide1">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides" style="transition: transform 800ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 4654px; transform: translate3d(-2332px, 0px, 0px);">
+								<li class="glide__slide glide__slide--clone" style="width: 202px; margin-right: 5px;">
+									<img src="./Cart_files/logo_04.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_05.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_06.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_07.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_08.jpg" alt="">
+								</li><li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_09.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_10.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_11.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_12.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_01.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_02.jpg" alt="">
+								</li>
+								<li class="glide__slide glide__slide--active" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_03.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_04.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_05.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_06.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_07.jpg" alt="">
+								</li>
+								<li class="glide__slide" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_08.jpg" alt="">
+								</li>
+							<li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_09.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_10.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_11.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px; margin-right: 5px;">
+									<img src="./Cart_files/logo_12.jpg" alt="">
+								</li><li class="glide__slide glide__slide--clone" style="width: 202px; margin-left: 5px;">
+									<img src="./Cart_files/logo_01.jpg" alt="">
+								</li></ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<!---FOOTER--->
+		<footer>
+			<div class="container">
+				<div class="container row">
+					<div class="col-md-3">
+						<h3>
+							MỞ RỘNG
+						</h3>
+						<ul>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Nhãn Hiệu
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Phiếu Quà Tặng
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									CHi Nhánh
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Đặc Biệt
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>
+							THÔNG TIN
+						</h3>
+						<ul>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Về Chúng Tôi
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Chính Sách Bảo Mật
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Điều Khoản và Điều Kiện
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Liên Hệ
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Tìm Chúng Tôi
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>
+							TÀI KHOẢN
+						</h3>
+						<ul>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Tài Khoản Của Tôi
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Lịch Sử Mua Hàng
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Danh Sách Muốn Mua
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Bản Tin
+								</a>
+							</li>
+							<li>
+								<a href="http://demo.trianh.edu.vn/cart.html#">
+									Lợi Nhuận
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h3>
+							CONTACT US
+						</h3>
+						<div style="margin-left: 20px;">
+							<span style="text-indent:-20px">
+								<i class="fa fa-map-marker">
+								</i>
+							</span>Đường đua F1, Phú Đô, Nam Từ Liêm, Hà Nội
+						</div>
+						<div style="margin-left: 20px;">
+							<span style="text-indent:-20px">
+								<i class="fa fa-envelope">
+								</i>
+							</span>
+							<a href="mailto:trianh.contact@gmail.com">trianh.contact@gmail.com</a>
+						</div>
+						<div style="margin-left: 20px;">
+							<span style="text-indent:-20px">
+								<i class="fa fa-phone">
+								</i>
+							</span>
+							<a href="tel:0964688431">0964688431</a>
+						</div>
+						<div class="payment-methods">
+							<img src="./Cart_files/payment.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+		<script src="./Cart_files/glide.js.download">
+		</script>
+
+	
+	
+</body></html>

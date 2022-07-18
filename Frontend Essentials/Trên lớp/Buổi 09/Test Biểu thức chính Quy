@@ -1,0 +1,43 @@
+AUSTRALIAN DOLLAR	AUD	15,745.93	15,904.98	16,417.63
+CANADIAN DOLLAR	CAD	17,464.59	17,641.00	18,209.60
+SWISS FRANC	CHF	23,425.82	23,662.44	24,425.13
+YUAN RENMINBI	CNY	3,402.12	3,436.49	3,547.79
+DANISH KRONE	DKK	-	3,226.64	3,350.69
+EURO	EUR	23,824.95	24,065.60	25,159.45
+POUND STERLING	GBP	27,764.83	28,045.28	28,949.23
+HONGKONG DOLLAR	HKD	2,885.14	2,914.29	3,008.22
+INDIAN RUPEE	INR	-	297.32	309.25
+YEN	JPY	167.51	169.20	177.34
+KOREAN WON	KRW	15.57	17.30	18.97
+KUWAITI DINAR	KWD	-	75,508.81	78,539.03
+MALAYSIAN RINGGIT	MYR	-	5,229.78	5,344.62
+NORWEGIAN KRONER	NOK	-	2,304.26	2,402.44
+RUSSIAN RUBLE	RUB	-	386.44	523.73
+SAUDI RIAL	SAR	-	6,176.18	6,424.04
+SWEDISH KRONA	SEK	-	2,251.59	2,347.53
+SINGAPORE DOLLAR	SGD	16,324.12	16,489.01	17,020.48
+THAILAND BAHT	THB	581.05	645.61	670.43
+US DOLLAR	USD	23,070.00	23,100.00	23,380.00
+
+(.*)\s([A-Z]{3,3}+)\s([0-9\,\.\-]+)\s([0-9\,\.\-]+)\s([0-9\,\.\-]+)
+
+<tr><td>AUSTRALIAN DOLLAR</td><td>AUD</td><td>15,745.93</td><td>15,904.98</td><td>16,417.63</td><tr>
+<tr><td>CANADIAN DOLLAR</td><td>CAD</td><td>17,464.59</td><td>17,641.00</td><td>18,209.60</td><tr>
+<tr><td>SWISS FRANC</td><td>CHF</td><td>23,425.82</td><td>23,662.44</td><td>24,425.13</td><tr>
+<tr><td>YUAN RENMINBI</td><td>CNY</td><td>3,402.12</td><td>3,436.49</td><td>3,547.79</td><tr>
+<tr><td>DANISH KRONE</td><td>DKK</td><td>-</td><td>3,226.64</td><td>3,350.69</td><tr>
+<tr><td>EURO</td><td>EUR</td><td>23,824.95</td><td>24,065.60</td><td>25,159.45</td><tr>
+<tr><td>POUND STERLING</td><td>GBP</td><td>27,764.83</td><td>28,045.28</td><td>28,949.23</td><tr>
+<tr><td>HONGKONG DOLLAR</td><td>HKD</td><td>2,885.14</td><td>2,914.29</td><td>3,008.22</td><tr>
+<tr><td>INDIAN RUPEE</td><td>INR</td><td>-</td><td>297.32</td><td>309.25</td><tr>
+<tr><td>YEN</td><td>JPY</td><td>167.51</td><td>169.20</td><td>177.34</td><tr>
+<tr><td>KOREAN WON</td><td>KRW</td><td>15.57</td><td>17.30</td><td>18.97</td><tr>
+<tr><td>KUWAITI DINAR</td><td>KWD</td><td>-</td><td>75,508.81</td><td>78,539.03</td><tr>
+<tr><td>MALAYSIAN RINGGIT</td><td>MYR</td><td>-</td><td>5,229.78</td><td>5,344.62</td><tr>
+<tr><td>NORWEGIAN KRONER</td><td>NOK</td><td>-</td><td>2,304.26</td><td>2,402.44</td><tr>
+<tr><td>RUSSIAN RUBLE</td><td>RUB</td><td>-</td><td>386.44</td><td>523.73</td><tr>
+<tr><td>SAUDI RIAL</td><td>SAR</td><td>-</td><td>6,176.18</td><td>6,424.04</td><tr>
+<tr><td>SWEDISH KRONA</td><td>SEK</td><td>-</td><td>2,251.59</td><td>2,347.53</td><tr>
+<tr><td>SINGAPORE DOLLAR</td><td>SGD</td><td>16,324.12</td><td>16,489.01</td><td>17,020.48</td><tr>
+<tr><td>THAILAND BAHT</td><td>THB</td><td>581.05</td><td>645.61</td><td>670.43</td><tr>
+<tr><td>US DOLLAR</td><td>USD</td><td>23,070.00</td><td>23,100.00</td><td>23,380.00</td><tr>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Demo</title>
+	<script type="text/javascript">
+		var mywindow
+		function greating()
+		{
+			var name = prompt('Tên bạn là gì');
+			alert('xin chào '+ name + '!');
+		}
+
+		function add(a,b)
+		{
+			var a = prompt('Nhập SỐ NGUYÊN a');
+			if (a===null){return}
+			var a = parseInt(a);
+			if(Number.isInteger(a))
+			{
+				var b = prompt('Nhập SỐ NGUYÊN b');
+				if (b===null){return}
+				var b = parseInt(b);
+				while(!Number.isInteger(b))
+				{
+					alert('SỐ NGUYÊN CƠ MÀ');
+					var b = parseInt(prompt('Nhập SỐ NGUYÊN b'));
+				}
+				/*alert('Tổng của a và b là ' + (a + b));*/
+				console.log('Tổng của a và b là ' + (a + b));
+				/*document.write('Tổng của a và b là ' + (a + b));*/
+				document.getElementById('result').innerHTML="Tổng là: "+(a+b);
+			}
+			else {
+				alert('SỐ NGUYÊN CƠ MÀ');
+				return add(a,b);} 
+			}
+
+		function getNow() {
+			var d = new Date()
+			alert("Now is: " + d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+ " - " + d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear());
+		}
+		
+	</script>
+</head>
+<body>
+
+
+<button onclick="alert('click cái quần què')">Hiện thông báo</button><br><br><br>
+<button ondblclick="if(confirm('đồng ý làm quen chứ ?')) greating()">Ê ku !</button><br><br><br>
+<button onclick="greating()">Làm quen</button>
+<button onclick="add()">Tính tổng a và b</button>
+<div id="result">Kết quả hiển thị là:</div>
+
+<button onclick="mywindow=window.open()">Mở cửa sổ mới</button>
+<button onclick="mywindow.close()">Đóng cửa sổ</button>
+<button onclick="history.go(-1)">Quay về trang trước</button>
+<button onclick="getNow()">Time is:</button>
+
+
+</body>
+</html>

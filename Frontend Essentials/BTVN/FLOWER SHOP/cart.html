@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a class="shop" id="shop" href="index.html">Shop</a>
+            <div class="logo">
+                <img class="logo_image" src="images/logo.jpg">
+            </div>
+            <div class="navbar_menu">
+                <ul>
+                    <li class="menu_item"><a class=nav_links href="index.html">Trang chủ</a></li>
+                    <li class="menu_item"><a class=nav_links href="category.html">Sản phẩm</a> </li>
+                    <li class="menu_item">
+                        <a class=nav_links href="#shop">
+                            Cửa hàng
+                            <span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu_item"><a class=nav_links href="contact.html">Liên hệ</a></li>
+                    <li class="menu_item"><a class=nav_links href="#login">Login</a></li>
+                    <li class="menu_item"><a class=nav_links href="#eng"><img src="images/en.png">
+                        <img src="images/vn.png"></a></li>
+                        <li class="menu_item"><a class=nav_links href="cart.html"><img src="images/cart.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+        <div class="clearboth" style="clear: both;"></div>
+
+        <!-- CART -->
+
+    <div class="cart">
+            <div class="cart_left_container" style="margin-top:50px;">
+                <div class="container" id="mini_cart" style="border:3px red solid;">
+                    <h3 style="line-height: 50px;text-align:center">
+                        GIỎ HÀNG
+                    </h3>
+                    <table class="left_table">
+                        <tbody><tr>
+                            <td>
+                                Tổng tiền
+                            </td>
+                            <td class="cart_subtotal">
+                                500.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Thuế
+                            </td>
+                            <td class="cart_tax">
+                                50.000
+                            </td>
+                        </tr>
+                        <tr style="border-top:2px red solid; font-size:1.2rem;">
+                            <td>
+                                Tổng tiền
+                            </td>
+                            <td class="cart_total">
+                                530.000
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+            <div class="cart_right_container">
+                <div class="cart_header">
+                    <h2 class="cart_title">
+                        GIỎ HÀNG
+                    </h2>
+                </div>
+                <div class="cart_header">
+                    <img src="images/flower_string.png" width="30%">
+                </div>
+                <div class="container">
+                    <table class="right_table">
+                        <tbody><tr style="font-size: 16px;background-color: red;color: white;">
+                            <th style="width:50%">
+                                Mặt hàng
+                            </th>
+                            <th style="width:15%">
+                                Số lượng
+                            </th>
+                            <th style="width:15%">
+                                Đơn giá
+                            </th>
+                            <th style="width:20%">
+                                Thành tiền
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart_item_info">
+                                    <img src="images/products/hoa1.jpg" alt=""style="width:4rem; margin-right:20px;float:left;">
+                                    <div>
+                                        <span style="font-size:1.2rem;">
+                                            Bambi Print Mini Backpack
+                                        </span>
+                                        <br>
+                                        <span>
+                                            Giá: 450.000đ
+                                        </span>
+                                        <br>
+                                        <a href="#">
+                                            Xóa
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" id="item_1" value="2" class="cart_item_quantity" style="text-align: center;
+                                width: 48px;">
+                            </td>
+                            <td id="price_item_1">
+                                450.000
+                            </td>
+                            <td id="total_item_1">
+                                900.000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cart_item_info">
+                                    <img src="images/products/hoa1.jpg" alt=""style="width:4rem; margin-right:20px;float:left;">
+                                    <div>
+                                        <span style="font-size:1.2rem;">
+                                            Bambi Print Mini Backpack
+                                        </span>
+                                        <br>
+                                        <span>
+                                            Giá: 450.000đ
+                                        </span>
+                                        <br>
+                                        <a href="#">
+                                            Xóa
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text" id="item_2" value="2" class="cart_item_quantity" style="text-align: center;
+                                width: 48px;">
+                            </td>
+                            <td id="price_item_2">
+                                450.000
+                            </td>
+                            <td id="total_item_2">
+                                900.000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                            </td>
+                            <td class="text-right" style="border-top: 2px red solid;">
+                                Tổng tiền
+                            </td>
+                            <td style="font-weight:900;border-top: 2px red solid;" class="cart_subtotal">
+                                500.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border:unset;">
+                            </td>
+                            <td class="text-right">
+                                Thuế
+                            </td>
+                            <td style="font-weight:900;" class="cart_tax">
+                                50.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border:unset;">
+                            </td>
+                            <td class="text-right">
+                                Tổng tiền
+                            </td>
+                            <td style="font-weight:900;" class="cart_total">
+                                530.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                            </td>
+                            <td style="font-weight:900;">
+                                <button class="btn cart_button">
+                                    Thanh toán
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        <div class="clearboth" style="clear: both;"></div>
+
+        <!-- PARTNER -->
+<!-- 
+        <div class="partner">
+            <section class="partner_container">
+                <div class="partner_header">
+                    <h2 class="partner_title">
+                        Các đối tác
+                    </h2>
+                    <span>
+                        Chọn lựa từ các thương hiệu sản phẩm cao cấp và tiết kiệm nhất
+                    </span>
+                </div>
+                <div class="partner_header">
+                    <img src="images/flower_string.png" width="30%">
+                </div>
+                <div>
+                    <img src="images/category.jpg" style="width: 100%">
+                </div>
+            </section>
+        </div>
+
+
+ -->
+        <div class="clearboth" style="clear: both;"></div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer">
+                <div class="footer_container">
+                    <div class="footer_menu">
+                        <h3>
+                            MỞ RỘNG
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Nhãn Hiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Phiếu Quà Tặng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chi Nhánh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đặc Biệt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>
+                            THÔNG TIN
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Về Chúng Tôi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chính Sách Bảo Mật
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Điều Khoản và Điều Kiện
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Liên Hệ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tìm Chúng Tôi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>
+                            TÀI KHOẢN
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Tài Khoản Của Tôi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lịch Sử Mua Hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Danh Sách Muốn Mua
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Bản Tin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Lợi Nhuận
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_menu">
+                        <h3>
+                            CONTACT US
+                        </h3>
+                        <div style="margin-left: 20px;">
+                            <span style="text-indent:-20px">
+                                <i class="fa fa-map-marker">
+                                </i>
+                            </span>Đường đua F1, Phú Đô, Nam Từ Liêm, Hà Nội
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <span style="text-indent:-20px">
+                                <i class="fa fa-envelope">
+                                </i>
+                            </span>
+                            <a href="mailto:trianh.contact@gmail.com">trianh.contact@gmail.com</a>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <span style="text-indent:-20px">
+                                <i class="fa fa-phone">
+                                </i>
+                            </span>
+                            <a href="tel:0964688431">0964688431</a>
+                        </div>
+                        <div class="payment-methods">
+                            <img src="images/products/payment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    </html>

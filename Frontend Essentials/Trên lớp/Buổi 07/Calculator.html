@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<title>Calculator</title>
+	<script type="text/javascript">
+		
+
+
+		/*----------------------------JQUERY SECTION--------------------------------------*/
+		$(document).ready(function(){
+			$('button').click(function(){
+				var st=$(this).text();
+				switch(st){
+					case "C":$("#screen").text("");break;
+					case "+/-":var tmp=$("#screen").text();tmp=parseFloat(tmp);tmp=-tmp;$("#screen").text(tmp);break;
+					case "%":var tmp=$("#screen").text();tmp=parseFloat(tmp);tmp=tmp/100;$("#screen").text(tmp);break;
+					case "=":var x; var tmp=$('#screen').text();tmp="x = "+tmp;eval(tmp);$('#screen').text(x);break;
+					default: var tmp=$('#screen').text();tmp=tmp+st;$('#screen').text(tmp);break
+				}
+			})
+
+		});
+		/*---------------------------------------SCRIPTS---------------------------------------*/
+
+	</script>
+
+	<style type="text/css">
+
+		#Calculator{
+	   		width: fit-content;
+	    	margin: auto;
+		}
+		button{
+			font-size: 30px;
+			font-family: fantasy;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 30px;
+			background-color: darkgrey;
+			border: 1px solid black;
+		}
+		button.top{
+			background-color: lightgrey;
+		}
+		button.right{
+			background-color: darkorange;
+		}
+		#screen{
+			border: 1px black solid;
+			border-radius: 10px;
+			font-size: 50px;
+			width: 100%;
+			height: 90px;
+			max-width: 260px;
+		}
+		table{border: 1px solid black;padding: 10px;}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id=Calculator>
+		
+		<table>
+			<tr>
+				<td colspan="4" id=screen></td>
+			</tr>
+			<tr><td colspan="4" style="height:10px;"></td></tr>
+			<tr>
+				<td>
+					<button class="top">C</button>
+				</td>
+				<td>
+					<button class="top">+/-</button>
+				</td>
+				<td>
+					<button class="top">%</button>
+				</td>
+				<td>
+					<button class="top">/</button>
+				</td>
+			</tr>
+			<tr>
+				<td><button>7</button></td>
+				<td><button>8</button></td>
+				<td><button>9</button></td>
+				<td><button class="right">*</button></td>
+			</tr>
+			<tr>
+				<td><button>4</button></td>
+				<td><button>5</button></td>
+				<td><button>6</button></td>
+				<td><button class="right">-</button></td>
+			</tr>
+			<tr>
+				<td><button>1</button></td>
+				<td><button>2</button></td>
+				<td><button>3</button></td>
+				<td><button class="right">+</button></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button style="width: 100%;">0</button></td>
+				<td><button>.</button></td>
+				<td><button class="right">=</button></td>
+			</tr>
+
+
+
+
+
+
+		</table>
+
+
+
+
+
+
+	</div>
+</body>
+</html>

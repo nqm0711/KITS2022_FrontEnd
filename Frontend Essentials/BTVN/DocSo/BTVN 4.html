@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đọc số</title>
+  <script type="text/javascript">
+    /*------------------------------Declaration-----------------------------*/
+
+      var chuc, tram, nghin, trieu, ti;
+      var record;
+      var text = '';
+      var sign;
+
+      /*--------------------Capitalize First Letter------------------------*/
+
+      function capFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
+
+      /*----------------------Convert Number to Words------------------------*/
+      function oneToNine(number) {
+        switch (number) {
+          case 0:
+            return 'không';
+            break;
+          case 1:
+            return 'một';
+            break;
+          case 2:
+            return 'hai';
+            break;
+          case 3:
+            return 'ba';
+            break;
+          case 4:
+            return 'bốn';
+            break;
+          case 5:
+            return 'năm';
+            break;
+          case 6:
+            return 'sáu';
+            break;
+          case 7:
+            return 'báy';
+            break;
+          case 8:
+            return 'tám';
+            break;
+          case 9:
+            return 'chín';
+            break;
+          case -1:
+            return '';
+            break;
+          default:
+            return intoThousand();
+        }
+      }
+      function oneToNineWithTen(number) {
+        switch (number) {
+          case 0:
+            return 'không';
+            break;
+          case 1:
+            return 'một';
+            break;
+          case 2:
+            return 'hai';
+            break;
+          case 3:
+            return 'ba';
+            break;
+          case 4:
+            return 'bốn';
+            break;
+          case 5:
+            return 'lăm';
+            break;
+          case 6:
+            return 'sáu';
+            break;
+          case 7:
+            return 'báy';
+            break;
+          case 8:
+            return 'tám';
+            break;
+          case 9:
+            return 'chín';
+            break;
+          case -1:
+            return '';
+            break;
+          default:
+            return intoThousand();
+        }
+      }
+      function oneToNineUnit(number) {
+        switch (number) {
+          case 0:
+            return 'không';
+            break;
+          case 1:
+            return 'mốt';
+            break;
+          case 2:
+            return 'hai';
+            break;
+          case 3:
+            return 'ba';
+            break;
+          case 4:
+            return 'tư';
+            break;
+          case 5:
+            return 'lăm';
+            break;
+          case 6:
+            return 'sáu';
+            break;
+          case 7:
+            return 'báy';
+            break;
+          case 8:
+            return 'tám';
+            break;
+          case 9:
+            return 'chín';
+            break;
+          case -1:
+            return '';
+            break;
+          default:
+            return intoThousand();
+        }
+      }
+
+      /*-------------------------------------CHECK SIGN OF NUMBER-------------------------------------*/
+
+      function checkSignOfNumber(number) {
+        switch (Math.sign(number)) {
+          case -1:
+            sign = 'Âm';
+            break;
+          case +1:
+            sign = 'Dương';
+            break;
+          default:
+            sign = 'không';
+        }
+        return sign;
+      }
+
+      /*-------------------------------------GET NUMBER OF DIGITS--------------------------------*/
+      function getDigit(number) {
+        var digit = 1;
+        if (number == null) {
+          return null;
+        }
+        while (Math.abs(number) / 10 >= 1) {
+          ++digit, (number = Math.floor(Math.abs(number) / 10));
+        }
+        return digit;
+      }
+
+      /*--------------------------------------CHECK INPUT NUMBER--------------------------------*/
+      function inputNumber(number) {
+        var number = prompt('Nhập số:');
+        if (number == 0) {
+          return 0;
+        }
+        if (number == null) {
+          return null;
+        }
+        var number = parseInt(number);
+        if (!Number.isInteger(number)) {
+          alert('Đây không phải là số nguyên, xin mời nhập lại');
+          return inputNumber();
+        }
+        return number;
+      }
+
+      /*----------------------------------------ĐỌC 2 SỐ-----------------------------------------*/
+
+      function intoZerotoTen(number, text) {
+        var yourNumber = number;
+        var abs = Math.abs(yourNumber);
+        var text = '';
+        var number = abs;
+        if ((abs > 0) & (abs < 10)) {
+          text = text + oneToNine(abs);
+        } else if (abs == 10) {
+          chuc = 1;
+          abs = abs % 10;
+          text = text + 'mười';
+        } else if ((abs > 10) & (abs < 20)) {
+          chuc = 1;
+          abs = abs % 10;
+          text = text + 'mười ' + oneToNineWithTen(abs);
+        } else if ((abs >= 20) & (abs < 100)) {
+          tram = 0;
+          chuc = Math.floor(abs / 10);
+          abs = abs % 10;
+          if (abs == 0) {
+            text = text + oneToNine(chuc) + ' mươi ';
+          } else text = text + oneToNine(chuc) + ' mươi ' + oneToNineUnit(abs);
+        } else if (abs >= 100) {
+          return intoHundred(abs, '');
+        }
+        return text;
+      }
+
+      /*----------------------------------------ĐỌC 3 SỐ-----------------------------------------*/
+
+      function intoHundred(number, text) {
+        var yourNumber = number;
+        var abs = Math.abs(yourNumber);
+        var number = abs;
+        tram = Math.floor(abs / Math.pow(10, 2));
+        abs = abs - tram * Math.pow(10, 2);
+        chuc = Math.floor(abs / Math.pow(10, 1));
+        abs = abs - chuc * Math.pow(10, 1);
+        donvi = abs;
+        if ((chuc == 0) & (donvi == 0)) {
+          text = text + oneToNine(tram) + ' trăm';
+        } else if ((chuc == 0) & (donvi != 0)) {
+          text = text + oneToNine(tram) + ' trăm linh ' + oneToNine(donvi);
+        } else if (chuc > 0) {
+          text =
+            text +
+            oneToNine(tram) +
+            ' trăm ' +
+            intoZerotoTen(chuc * 10 + donvi, '');
+        } else if (number >= 1000) {
+          return intoThousand(number);
+        }
+        return text;
+      }
+
+      /*----------------------------------------ĐỌC BỘ 3 SỐ-----------------------------------------*/
+
+      function intoThousand(number, record, text) {
+        var yourNumber = number;
+        var abs = Math.abs(yourNumber);
+        var abs2 = Math.abs(record);
+        var digit = getDigit(abs);
+        var number = abs;
+        var number2;
+        ti = Math.floor(abs / Math.pow(10, 9));
+        abs = abs - ti * Math.pow(10, 9);
+        trieu = Math.floor(abs / Math.pow(10, 6));
+        abs = abs - trieu * Math.pow(10, 6);
+        nghin = Math.floor(abs / Math.pow(10, 3));
+        abs = abs - nghin * Math.pow(10, 3);
+        tram = Math.floor(abs / Math.pow(10, 2));
+        abs = abs - tram * Math.pow(10, 2);
+        chuc = Math.floor(abs / Math.pow(10, 1));
+        abs = abs - chuc * Math.pow(10, 1);
+        donvi = abs;
+        switch (digit) {
+          case 1:
+          case 2:
+            text = text + intoZerotoTen(number, '');
+            return text;
+            break;
+          case 3:
+            text = text + intoHundred(number, '');
+            return text;
+            break;
+          case 4:
+            if (tram == 0 && chuc == 0 && donvi == 0) {
+              text = text + oneToNine(nghin) + ' nghìn';
+            } else if (tram == 0 && (chuc == 0) & (donvi != 0)) {
+              text =
+                text +
+                oneToNine(nghin) +
+                ' nghìn không trăm linh ' +
+                oneToNine(donvi);
+            } else if (tram == 0 && chuc != 0) {
+              text =
+                text +
+                oneToNine(nghin) +
+                ' nghìn ' +
+                oneToNine(tram) +
+                ' trăm ' +
+                intoZerotoTen(chuc * 10 + donvi, '');
+            } else if (tram != 0) {
+              text =
+                text +
+                oneToNine(nghin) +
+                ' nghìn ' +
+                intoHundred(tram * 100 + chuc * 10 + donvi, text);
+            }
+            return text;
+            break;
+          case 5:
+          case 6:
+            while (nghin > 9) {
+              number = nghin;
+              var front = intoThousand(number, number, text);
+              text = front + ' nghìn ';
+              number = abs2 - number * Math.pow(10, 3);
+              tram = Math.floor(number / Math.pow(10, 2));
+              number = number - tram * Math.pow(10, 2);
+              chuc = Math.floor(number / Math.pow(10, 1));
+              number = number - chuc * Math.pow(10, 1);
+              donvi = number;
+              if (tram == 0 && chuc == 0 && donvi == 0) {
+                text = text;
+              } else if (tram == 0 && (chuc == 0) & (donvi != 0)) {
+                text = text + 'không trăm linh ' + oneToNine(donvi);
+              } else if (tram == 0 && chuc != 0) {
+                text =
+                  text + 'không trăm ' + intoZerotoTen(chuc * 10 + donvi, '');
+              } else if (tram != 0) {
+                text = text + intoHundred(tram * 100 + chuc * 10 + donvi, '');
+              }
+            }
+            return text;
+            break;
+          case 7:
+            text = text + oneToNine(trieu) + ' triệu ';
+            if ((nghin == 0) & (tram == 0) && chuc == 0 && donvi == 0) {
+              text = text;
+            } else if (
+              (nghin == 0) & (tram == 0) &&
+              (chuc == 0) & (donvi != 0)
+            ) {
+              text = text + 'không trăm linh ' + oneToNine(donvi);
+            } else if ((nghin == 0) & (tram == 0) && chuc != 0) {
+              text =
+                text + 'không trăm ' + intoZerotoTen(chuc * 10 + donvi, '');
+            } else if ((nghin == 0) & (tram != 0)) {
+              text = text + intoHundred(tram * 100 + chuc * 10 + donvi, '');
+            } else if (nghin != 0) {
+              number = number - trieu * Math.pow(10, 6);
+              text = text + intoThousand(number, number, '');
+            }
+            return text;
+            break;
+          case 8:
+          case 9:
+            while (trieu > 9) {
+              number = trieu;
+              var front = intoThousand(number, number, text);
+              text = front + ' triệu ';
+              number2 = abs2 - number * Math.pow(10, 6);
+              number = abs2 - number * Math.pow(10, 6);
+              nghin = Math.floor(number / Math.pow(10, 3));
+              number = number - nghin * Math.pow(10, 3);
+              tram = Math.floor(number / Math.pow(10, 2));
+              number = number - tram * Math.pow(10, 2);
+              chuc = Math.floor(number / Math.pow(10, 1));
+              number = number - chuc * Math.pow(10, 1);
+              donvi = number;
+              if ((nghin == 0) & (tram == 0) && chuc == 0 && donvi == 0) {
+                text = text;
+              } else if (
+                (nghin == 0) & (tram == 0) &&
+                (chuc == 0) & (donvi != 0)
+              ) {
+                text = text + 'không trăm linh ' + oneToNine(donvi);
+              } else if ((nghin == 0) & (tram == 0) && chuc != 0) {
+                text =
+                  text + 'không trăm ' + intoZerotoTen(chuc * 10 + donvi, '');
+              } else if ((nghin == 0) & (tram != 0)) {
+                text = text + intoHundred(tram * 100 + chuc * 10 + donvi, '');
+              } else if (nghin != 0) {
+                text = text + intoThousand(number2, number2, '');
+              }
+            }
+            return text;
+            break;
+          case 10:
+            text = text + oneToNine(ti) + ' tỉ ';
+            if (
+              (trieu == 0) & (nghin == 0) & (tram == 0) &&
+              chuc == 0 &&
+              donvi == 0
+            ) {
+              text = text;
+            } else if (
+              (trieu == 0) & (nghin == 0) & (tram == 0) &&
+              (chuc == 0) & (donvi != 0)
+            ) {
+              text = text + 'không trăm linh ' + oneToNine(donvi);
+            } else if ((trieu == 0) & (nghin == 0) & (tram == 0) && chuc != 0) {
+              text =
+                text + 'không trăm ' + intoZerotoTen(chuc * 10 + donvi, '');
+            } else if ((trieu == 0) & (nghin == 0) & (tram != 0)) {
+              text = text + intoHundred(tram * 100 + chuc * 10 + donvi, '');
+            } else if ((trieu == 0) & (nghin != 0)) {
+              number = number - ti * Math.pow(10, 9) - trieu * Math.pow(10, 6);
+              text = text + intoThousand(number, number, '');
+            } else if (trieu != 0) {
+              number = number - ti * Math.pow(10, 9);
+              text = text + intoThousand(number, number, '');
+            }
+            return text;
+            break;
+          case 11:
+          default:
+            while (ti > 9) {
+              number = ti;
+              var front = intoThousand(number, number, text);
+              text = front + ' tỉ ';
+              number2 = abs2 - number * Math.pow(10, 9);
+              number = abs2 - number * Math.pow(10, 9);
+              trieu = Math.floor(number / Math.pow(10, 6));
+              number = number - trieu * Math.pow(10, 6);
+              nghin = Math.floor(number / Math.pow(10, 3));
+              number = number - nghin * Math.pow(10, 3);
+              tram = Math.floor(number / Math.pow(10, 2));
+              number = number - tram * Math.pow(10, 2);
+              chuc = Math.floor(number / Math.pow(10, 1));
+              number = number - chuc * Math.pow(10, 1);
+              donvi = number;
+              if (
+                (trieu == 0) & (nghin == 0) & (tram == 0) &&
+                chuc == 0 &&
+                donvi == 0
+              ) {
+                text = text;
+              } else if (
+                (trieu == 0) & (nghin == 0) & (tram == 0) &&
+                (chuc == 0) & (donvi != 0)
+              ) {
+                text = text + 'không trăm linh ' + oneToNine(donvi);
+              } else if (
+                (trieu == 0) & (nghin == 0) & (tram == 0) &&
+                chuc != 0
+              ) {
+                text =
+                  text + 'không trăm ' + intoZerotoTen(chuc * 10 + donvi, '');
+              } else if ((trieu == 0) & (nghin == 0) & (tram != 0)) {
+                text = text + intoHundred(tram * 100 + chuc * 10 + donvi, '');
+              } else if ((trieu == 0) & (nghin != 0)) {
+                number =
+                  number - ti * Math.pow(10, 9) - trieu * Math.pow(10, 6);
+                text = text + intoThousand(number2, number2, '');
+              } else if (trieu != 0) {
+                number = number - ti * Math.pow(10, 9);
+                text = text + intoThousand(number2, number2, '');
+              }
+            }
+            return text;
+            break;
+        }
+      }
+
+      /*---------------------ALERT MAIN FUNCTIONS--------------------------*/
+      function alertDigitNumber(number) {
+        var yourNumber = inputNumber(number);
+        if (yourNumber == null) {
+          return alert('Tạm biệt !!');
+        }
+        alert(
+          'Bạn vừa nhập số: ' +
+            yourNumber +
+            '\n' +
+            '\n' +
+            'Số ' +
+            yourNumber +
+            ' có ' +
+            getDigit(yourNumber) +
+            ' chữ số.'
+        );
+      }
+      function docSo(number) {
+        var yourNumber = (record = inputNumber(number));
+        if (yourNumber == 0) {
+          return alert('Không');
+        }
+        if (yourNumber == null) {
+          return alert('Tạm biệt !!');
+        }
+        var sign = checkSignOfNumber(yourNumber);
+        var pronounce = intoThousand(yourNumber, record, text);
+        switch (sign) {
+          case 'Âm':
+            alert(sign + ' ' + pronounce);
+            break;
+          case 'Dương':
+            alert(capFirstLetter(pronounce));
+            break;
+          default:
+            alert('Không');
+            return;
+        }
+      }
+      /*---------------------ALERT OTHER FUNCTIONS--------------------------*/
+      function alertInputNumber(number) {
+        var yourNumber = inputNumber(number);
+        alert('Bạn vừa nhập số: ' + yourNumber);
+      }
+      function alertSignOfNumber(number) {
+        var yourNumber = inputNumber(number);
+        if (yourNumber == 0) {
+          return alert(' Số ' + yourNumber + ' là số không');
+        }
+        if (yourNumber == null) {
+          return alert('Tạm biệt !!');
+        }
+        alert(' Số ' + yourNumber + ' là số ' + checkSignOfNumber(yourNumber));
+      }
+
+      /*---------------------CHECK FUNCTIONS--------------------------*/
+      /*		function check(){
+			var yourNumber=record=inputNumber(number);
+			alert(intoThousand(yourNumber,record,text));
+		}*/
+  </script>
+</head>
+
+<body>
+  <div>
+    <button onclick="docSo()">Đọc số bằng tiếng Việt</button>
+    <button onclick="alertDigitNumber()">
+        Thông báo lại số nhập vào và số chữ số
+      </button>
+    <button onclick="alertSignOfNumber()">Thông báo dấu</button>
+    <!-- --------------CHECK FUNCTIONS BUTTON------------------ -->
+    <!-- <button onclick="alertSignOfNumber()">Check Functions</button> -->
+  </div>
+</body>
+
+</html>

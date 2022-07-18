@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buổi 3</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<style type="text/css">
+		#wrapper{
+			width: 100%;
+
+		}
+
+		#logo{
+			width: 20%;
+			/*background-color: red;*/
+		}
+
+
+		#banner{
+			width: 80%;
+			height: 250px;
+			/*background-image: url(https://fedudesign.vn/wp-content/uploads/2020/07/Web-1920-%E2%80%93-2.jpg);*/
+			background-repeat: no-repeat;
+			background-image: linear-gradient(to right,white,black);
+		}
+
+		.item,.item_grey_bgr{
+			width: 10%;
+			background-color: white;
+			text-transform: uppercase;
+		}
+
+		.fa{
+			width: 40px;
+			height: 40px;
+			font-size: 30px;
+			text-align: center;
+			line-height: 40px;
+			z-index: 100;
+		}
+
+		#top .fa:hover{
+			color: red;
+			box-shadow: 2px 2px 2px 2px;
+		}
+
+		#content{
+	    position: absolute;
+	    top: 50px;
+	    left: 50px;
+	    width: 500px;
+	    height: 500px;
+	    background-color: darkred;
+	    display: none;
+		}
+
+		#top .fa:hover ~ #content{
+			display: block;
+			float: left;
+		}
+
+</style>
+</head>
+<body>
+	<div id="top">
+		<i class="fa fa-solid fa-cloud-sun"></i>
+		<i class="fa fa-regular fa-money-bill-1"></i>
+		<i class="fa fa-solid fa-calculator"></i>
+		<div id="content">Thông tin abcxyz</div>
+	</div>
+	<div id="header">
+		<div id="logo">LOGO HERE</div>
+		<div id="banner">BANNER HERE</div>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div id="menu">MENU HERE</div>
+
+	<div style="clear: both;"></div>
+
+	<div id="main_content">
+
+		<div class="item_0">Cộng hòa xã hội chủ nghĩa Việt Nam</div>
+		<div class="item_grey_bgr"><i class="fa fa-regular fa-face-dizzy"></i></div>
+		<div class="item">
+			<ul>
+				<li>AAA</li>
+				<li>BBB</li>
+				<li>CCC</li>
+			</ul>
+		</div>
+		<div class="item_grey_bgr"><i class="fa fa-brands fa-galactic-senate"></i></div>
+		<div class="item"><i class="fa fa-brands fa-old-republic"></i></div>
+		<div class="item_grey_bgr"><i class="fa fa-brands fa-bitcoin"></i></div>
+		<div class="item"><i class="fa fa-brands fa-paypal"></i></div>
+
+	</div>
+
+</body>
+</html>

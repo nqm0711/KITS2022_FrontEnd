@@ -1,0 +1,166 @@
+{
+  "name": "$commerce.productName",
+  "description": "$lorem.paragraphs",
+  "price": "$commerce.price",
+  "date": "$date.recent",
+  "category": "$name.jobArea",
+  "catPic": "http://loremflickr.com/640/480/skill",
+  "picture": "$image.image",
+  "content": [{
+    "section1Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section1Name": "$name.jobType"
+    },{
+    "section2Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section2Name": "$name.jobType"
+    },{
+    "section3Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section3Name": "$name.jobType"
+    },{
+    "section4Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section4Name": "$name.jobType"
+    },{
+    "section5Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section5Name": "$name.jobType"
+    },{
+    "section6Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section1Name": "$name.jobType"
+    },{
+    "section6Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section1Name": "$name.jobType"
+    },{
+    "section7Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section7Name": "$name.jobType"
+    },{
+    "section8Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section8Name": "$name.jobType"
+    },{
+    "section1Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section8Name": "$name.jobType"
+    },{
+    "section9Content":[
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle",
+        "$name.jobTitle"
+      ],
+      "section9Name": "$name.jobType"
+    }
+]
+  }
+}

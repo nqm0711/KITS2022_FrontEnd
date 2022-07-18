@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#action').click(function(){
+				var operator=$('#operator').val()
+				var inputString=$('#input_string').val();
+				var patternString=$('#pattern').val();
+				var modifierString="";$('.modifier').each(function(){if(this.checked){modifierString+=$(this).val();}});
+				var replacementString=$('#replacement').val();
+				var re=new RegExp(patternString,modifierString);
+				var result;
+				switch(operator){
+					case "search":result=inputString.search(re);break;
+					case "match":result=inputString.match(re);break;
+					case "replace":result=inputString.replace(re,replacementString);break;
+					case "test":re.test(inputString);break;
+					default: return;
+				}
+				$('#result').text(result);
+			});
+		});
+	</script>
+	<title>VALIDATION DEMO</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Thao tác:</td>
+			<td>
+				<select id="operator">
+					<option value="search">Search</option>
+					<option value="match">Match</option>
+					<option value="replace">Replace</option>
+					<option value="test">Test</option>
+					<!-- <option value=""></option> -->
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Đầu vào:</td>
+			<td><textarea id="input_string"></textarea></td>
+		</tr>
+		<tr>
+			<td>Xâu mẫu:</td>
+			<td><input type="text" id="pattern" name=""></td>
+		</tr>
+		<tr>
+			<td>Phạm vi:</td>
+			<td>
+				i<input type="checkbox" class="modifier" value="i">
+				m<input type="checkbox" class="modifier" value="m">
+				g<input type="checkbox" class="modifier" value="g">
+			</td>
+		</tr>
+		<tr>
+			<td>Xâu thay thế:</td>
+			<td><input type="text" id="replacement "name=""></td>
+		</tr>
+		<tr>
+			<td>Kết quả:</td>
+			<td id="result"></td>
+		</tr>
+	</table>
+	<button id="action">Thực hiện</button><br>
+	
+	
+
+</body>
+</html>

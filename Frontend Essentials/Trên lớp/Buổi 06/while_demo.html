@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>While Demo</title>
+	<script type="text/javascript">
+		function test() {
+			var a = prompt('Nhập a');
+			a = parseInt(a);
+			var b = prompt('Nhập b');
+			b = parseInt(b);
+			var u = tinhUCLN(a,b);
+			alert('Ước số chung lớn nhất là '+u);
+		}
+		function test2() {
+			do{
+			var a = prompt('Nhập a');
+			a = parseInt(a);
+			var b = prompt('Nhập b');
+			b = parseInt(b);
+			var u = tinhUCLN(a,b);
+			alert('Ước số chung lớn nhất là '+u);
+			var tt=prompt('Tiếp tục ?')
+			} while (tt == "C"||tt=="c"||tt=="y"||tt=="Y");
+		}
+		function test3() {
+			do{
+			var a = prompt('Nhập a');
+			a = parseInt(a);
+			var b = prompt('Nhập b');
+			b = parseInt(b);
+			var u = tinhUCLN(a,b);
+			alert('Ước số chung lớn nhất là '+u);
+			} while (confirm("Tiếp tục?"));
+		}
+		function tinhUCLN(a,b)
+		{
+			while(a!=b)
+				if (a>b){a=a-b}
+					else{b=b-a}
+						return a;
+			}
+	</script>
+</head>
+<body>
+	<button onclick="test()">Tính ước số chung lớn nhất</button>
+	<button onclick="test2()">Tính ước số chung lớn nhất</button>	
+	<button onclick="test3()">Tính ước số chung lớn nhất</button>	
+</body>
+</html>

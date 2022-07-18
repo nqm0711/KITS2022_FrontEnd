@@ -1,0 +1,33 @@
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 450px;
+    height: 40px;
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+#header {
+    height: 740px;
+}
+#textareaname {
+    margin-top: 27px;
+}
+#submitform {
+    width: 140px;
+    height: 36px;
+    background-color: #ff7c7c;
+    border: 0px;
+    border-radius: 8px;
+}
+#center-right {
+    width: 50%;
+    float: right;
+    padding: 97px;
+    text-align: center;
+}
+#info_shop{
+    text-align: left;
+}
+#fotter {
+    width: 1061px;
+}

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Category</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<!-- NAVBAR -->
+	<nav class="navbar">
+		<div class="navbar_container">
+			<a class="shop" id="shop" href="index.html">Shop</a>
+			<div class="logo">
+				<img class="logo_image" src="images/logo.jpg">
+			</div>
+			<div class="navbar_menu">
+				<ul>
+					<li class="menu_item"><a class=nav_links href="index.html">Trang chủ</a></li>
+					<li class="menu_item"><a class=nav_links href="category.html">Sản phẩm</a> </li>
+					<li class="menu_item">
+						<a class=nav_links href="#shop">
+							Cửa hàng
+							<span>
+							</span>
+						</a>
+					</li>
+					<li class="menu_item"><a class=nav_links href="contact.html">Liên hệ</a></li>
+					<li class="menu_item"><a class=nav_links href="#login">Login</a></li>
+					<li class="menu_item"><a class=nav_links href="#eng"><img src="images/en.png">
+						<img src="images/vn.png"></a></li>
+						<li class="menu_item"><a class=nav_links href="cart.html"><img src="images/cart.png"></a></li>
+					</ul>
+				</div>
+		</div>
+	</nav>
+
+	<div class="clearboth" style="clear: both;"></div>
+
+	<!-- CATEGORY -->
+	<div clas="container">
+		<div class="category" style="margin-top:50px;">
+			<div class="category_container">
+				<div class="category_left">
+					<div id="block1">
+						<div class="left_title">
+							<h3>
+								Danh Mục
+							</h3>
+						</div>
+						<ul class="left_content">
+							<li>
+								<input type="checkbox" name="" id="">
+								<label for="">
+									<span>
+										Hoa Cưới
+									</span>
+									<small>
+										(10)
+									</small>
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="">
+								<label for="">
+									<span>
+										Hoa Chúc Mừng
+									</span>
+									<small>
+										(7)
+									</small>
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="">
+								<label for="">
+									<span>
+										Hoa Khô
+									</span>
+									<small>
+										(3)
+									</small>
+								</label>
+							</li>
+							<li>
+								<input type="checkbox" name="" id="">
+								<label for="">
+									<span>
+										Hoa Tặng
+									</span>
+									<small>
+										(3)
+									</small>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div id="block2">
+						<div class="left_title">
+							<h3>
+								Thương Hiệu
+							</h3>
+						</div>
+						<ul class="left_content">
+							<li>
+								<input type="checkbox" name="" id="">
+								<label for="">
+									<span>
+										The Flower Shop
+									</span>
+									<small>
+										(10)
+									</small>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="category_right">
+					<div class="category_right_container">
+						<div class="category_right_title">
+							<h1>
+								HOA CƯỚI
+							</h1>
+						</div>
+						<div class="category_right_sort">
+							<form id="category_listing_sort">
+								<div class="sort_container" style="justify-content: right;">
+									<div class="sort_button_container">
+										<label class="sr-only" for="sort-by">
+											Sắp xếp 
+										</label>
+										<select name="sort-by" id="sort-by" class="sort_field">
+											<option value="title" selected="selected">
+												Name
+											</option>
+											<option value="number">
+												Price
+											</option>
+											<option value="search_api_relevance">
+												Relevance
+											</option>
+											<option value="created">
+												Newness
+											</option>
+										</select>
+									</div>
+									<div class="sort_button_container">
+										<label class="sr-only" for="sort-by">
+											Sắp xếp
+										</label>
+										<select name="order-by" id="sort-by" class="sort_field">
+											<option value="ASC" selected="selected">
+												ASC
+											</option>
+											<option value="DESC">
+												DESC
+											</option>
+										</select>
+									</div>
+									<div class="sort_button_container">
+										<button type="submit" class="btn sort_button_btn">
+											Search
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_01.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_02.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_03.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_04.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_05.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_06.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_07.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_08.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_09.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_10.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_11.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="category_item_container">
+							<div class="category_item">
+								<div class="img-container">
+									<img class="category_item_img" src="images/products/product_12.jpg" alt="Hoa sinh nhật">
+									<div class="addCart">
+										<i class="fa fa-shopping-cart">
+										</i>
+									</div>
+									<ul class="side-icons">
+										<span>
+											<i class="fa fa-search">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-heart">
+											</i>
+										</span>
+										<span>
+											<i class="fa fa-sliders">
+											</i>
+										</span>
+									</ul>
+								</div>
+								<div class="category_item_body">
+									<h5 class="category_item_title">
+										HOA SINH NHẬT
+									</h5>
+									<p>
+										<span class="price">
+											200.000đ
+										</span>
+										<span class="old_price">
+											250.000đ
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearboth" style="clear: both;"></div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer">
+			<div class="footer_container">
+				<div class="footer_menu">
+					<h3>
+						MỞ RỘNG
+					</h3>
+					<ul>
+						<li>
+							<a href="#">
+								Nhãn Hiệu
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Phiếu Quà Tặng
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Chi Nhánh
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Đặc Biệt
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_menu">
+					<h3>
+						THÔNG TIN
+					</h3>
+					<ul>
+						<li>
+							<a href="#">
+								Về Chúng Tôi
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Chính Sách Bảo Mật
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Điều Khoản và Điều Kiện
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Liên Hệ
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Tìm Chúng Tôi
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_menu">
+					<h3>
+						TÀI KHOẢN
+					</h3>
+					<ul>
+						<li>
+							<a href="#">
+								Tài Khoản Của Tôi
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Lịch Sử Mua Hàng
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Danh Sách Muốn Mua
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Bản Tin
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Lợi Nhuận
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_menu">
+					<h3>
+						CONTACT US
+					</h3>
+					<div style="margin-left: 20px;">
+						<span style="text-indent:-20px">
+							<i class="fa fa-map-marker">
+							</i>
+						</span>Đường đua F1, Phú Đô, Nam Từ Liêm, Hà Nội
+					</div>
+					<div style="margin-left: 20px;">
+						<span style="text-indent:-20px">
+							<i class="fa fa-envelope">
+							</i>
+						</span>
+						<a href="mailto:trianh.contact@gmail.com">trianh.contact@gmail.com</a>
+					</div>
+					<div style="margin-left: 20px;">
+						<span style="text-indent:-20px">
+							<i class="fa fa-phone">
+							</i>
+						</span>
+						<a href="tel:0964688431">0964688431</a>
+					</div>
+					<div class="payment-methods">
+						<img src="images/products/payment.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

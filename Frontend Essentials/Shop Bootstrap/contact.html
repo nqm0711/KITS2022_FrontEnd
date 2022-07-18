@@ -1,0 +1,333 @@
+	<!doctype html>
+		<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+			<!-- CSS only -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+			<title>Flower Shop</title>
+		</head>
+		<body>
+			<!-- <div class="wrapper"> -->
+				<!-- HEADER -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container">
+						<a class="navbar-brand" href="#">Shop</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sản phẩm</a>
+								</li>
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Cửa hàng
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li><a class="dropdown-item" href="#">Số 1 khuất duy tiến</a></li>
+										<li><a class="dropdown-item" href="#">Số 5 Trần DUy Hưng</a></li>
+										<li><a class="dropdown-item" href="#">Số 10 Nguyễn Trãi</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Liên hệ </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Đăng nhập</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" style="padding: 0px;"><img src="images/vn.png" style="height: 30px; margin: 5px; flex-direction: row;"></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" style="padding: 0px"><img src="images/en.png" style="height: 30px; margin: 5px; flex-direction: row;"></a>
+								</li>
+								<li class="nav-item">
+									<i class="fa fa-solid fa-cart-plus" style="font-size: 1.5rem; height: 40px; margin: 5px; flex-direction: row;"><span class="cart_number">20</span></i>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- End of HEADER -->
+
+				<!-- CONTENT -->
+
+				<div class="container">
+					<div class="container content">
+						<div class="container-fluid text-center">
+							<h2 class="section-title">LIÊN HỆ</h2>
+							<img src="images/flower_string.png" style="width: 30%;">
+						</div>
+						<!-- ITEMS -->
+						<div class="container row">
+							<div class="col-md-6">
+								<h3 style="text-align:center">GỬI PHẢN HỒI</h3>
+								<form action="#" method="post">
+									<div class="form-group row container">
+										<label for="fullname" class="sr-only col-sm-3 col-form-label">Họ tên</label>
+										<div class="input-group mt-3">
+											<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Họ tên">
+											<span class="input-group-text">
+												<i class="fa fa-user"></i>
+											</span>
+										</div>
+										<div class="form-group row container">
+											<label for="email" class="sr-only col-sm-3 col-form-label">Email</label>
+										</div>
+										<div class="input-group mt-3">
+											<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+											<span class="input-group-text">
+												<i class="fa fa-envelope"></i>
+											</span>
+										</div>
+										<div class="form-group row container">
+											<label for="phone" class="sr-only col-sm-3 col-form-label">Số điện thoại</label>
+										</div>
+										<div class="input-group mt-3">
+											<input type="text" class="form-control" id="phone" name="phone" placeholder="Số điện thoại">
+											<span class="input-group-text">
+												<i class="fa fa-phone"></i>
+											</span>
+										</div>
+										<div class="form-group row container">
+											<label for="subject" class="sr-only col-sm-3 col-form-label">Tiêu đề</label>
+										</div>
+										<div class="input-group mt-3">
+											<input type="text" class="form-control" id="subject" name="subject" placeholder="Tiêu đề">
+											<span class="input-group-text">
+												<i class="fa fa-file"></i>
+											</span>
+										</div>
+										<div class="form-group row container">
+											<label for="content" class="sr-only col-sm-3 col-form-label">Nội dung</label>
+										</div>
+										<div class="input-group mt-3">
+											<textarea class="form-control" id="content" name="content" placeholder="Nội dung" rows="8"></textarea>
+										</div>
+									</div>
+									<div class="form-group row container">
+										<button type="submit" class="form-control btn btn-danger" style="width: 10rem;">Gửi</button>
+									</div>
+								</form>
+							</div>
+							<div class="col-md-6">
+								<h3 style="text-align:center">
+									THÔNG TIN LIÊN HỆ
+								</h3>
+								<div>
+									<p>
+										<strong>
+											Địa chỉ:
+										</strong>
+										Đường đua F1, Phú Đô, Nam Từ Liêm, Hà Nội
+									</p>
+									<p>
+										<strong>
+											Hotline:
+										</strong>
+										<a href="tel:085.949.8558" class="contact">
+											085.949.8558
+										</a>
+									</p>
+									<p>
+										<strong>
+											Email:
+										</strong>
+										<a href="mailto:contact.trianh@gmail.com" class="contact">
+											contact.trianh@gmail.com
+										</a>
+									</p>
+								</div>
+								<div class="map">
+									<iframe style="width:100%; aspect-ratio:6/5;" id="gmap_canvas" src="https://maps.google.com/maps?q=C%C3%B4ng%20ty%20C%E1%BB%95%20ph%E1%BA%A7n%20%C4%91%C3%A0o%20t%E1%BA%A1o%20CNTT%20Tr%C3%AD%20Anh,%20Ng%C3%B5%208%20%C4%90%C6%B0%E1%BB%9Dng%20L%C3%AA%20Quang%20%C4%90%E1%BA%A1o,%20l%C3%A0ng%20Ph%C3%BA%20%C4%90%C3%B4,%20Phu%20Do,%20T%E1%BB%AB%20Li%C3%AAm,%20Hanoi&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+									</iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of ADVERTISEMENT -->
+
+			<!-- PARTNER -->
+
+			<div class="container">
+				<div class="row partner">
+					<div class="container-fluid text-center">
+						<h2 class="section-title">ĐỐI TÁC</h2>
+						<img src="images/flower_string.png" style="width: 30%;">
+					</div>
+				</div>
+
+				<div class="brand-layout container" id="sliders_frame">
+					<img class="img-thumbnail img_partner" src="images/products/brand1.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand2.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand3.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand4.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand5.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand6.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand7.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand1.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand2.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand3.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand4.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand5.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand6.png">
+					<img class="img-thumbnail img_partner" src="images/products/brand7.png">
+				</div>
+
+			</div>
+
+			<!-- End of PARTNER -->
+
+			<!-- FOOTER -->
+
+			<footer class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="container row">
+							<div class="col-md-3">
+								<h3>
+									MỞ RỘNG
+								</h3>
+								<ul class="menu-list">
+									<li>
+										<a href="#">
+											Nhãn Hiệu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Phiếu Quà Tặng
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											CHi Nhánh
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Đặc Biệt
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<h3>
+									THÔNG TIN
+								</h3>
+								<ul class="menu-list">
+									<li>
+										<a href="#">
+											Về Chúng Tôi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Chính Sách Bảo Mật
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều Khoản và Điều Kiện
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Liên Hệ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Tìm Chúng Tôi
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<h3>
+									TÀI KHOẢN
+								</h3>
+								<ul class="menu-list">
+									<li>
+										<a href="#">
+											Tài Khoản Của Tôi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Lịch Sử Mua Hàng
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Danh Sách Muốn Mua
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Bản Tin
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Lợi Nhuận
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<h3>
+									CONTACT US
+								</h3>
+								<div style="margin-left: 20px;">
+									<span style="text-indent:-20px">
+										<i class="fa fa-map-marker">
+										</i>
+									</span>Đường đua F1, Phú Đô, Nam Từ Liêm, Hà Nội
+								</div>
+								<div style="margin-left: 20px;">
+									<span style="text-indent:-20px">
+										<i class="fa fa-envelope">
+										</i>
+									</span>
+									<a href="mailto:trianh.contact@gmail.com">trianh.contact@gmail.com</a>
+								</div>
+								<div style="margin-left: 20px;">
+									<span style="text-indent:-20px">
+										<i class="fa fa-phone">
+										</i>
+									</span>
+									<a href="tel:0964688431">0964688431</a>
+								</div>
+								<div class="payment-methods">
+									<img src="./images/products/payment.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- End of FOOTER -->
+
+			<!-- </div> -->
+
+
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		</body>
+		</html>

@@ -1,0 +1,348 @@
+/*---------------------GENERAL STYLE-------------------*/
+*{
+	box-sizing: border-box;
+}
+
+/*h5{
+	font-size: 1.125rem;
+}*/
+body{
+	font-family: "Nunito", sans-serif;
+}
+
+/*--------------------NAVBAR----------------------*/
+
+.navbar-light .navbar-brand{
+	color: #FF4545;
+	font-size: 2.0rem;
+	padding: 0.5rem;
+	font-weight: 600;
+	border: 3px solid black;
+}
+
+li a{
+	display: inline-block;
+}
+
+.cart_number{
+	color: white;
+	background-color: red;
+	border-radius: 50%;
+	font-size: 0.9rem;
+	text-align: center;
+	top: -10px;
+	right: 6px;
+	position: relative;
+	vertical-align:	middle;
+}
+
+/*--------------------CAROUSEL----------------------*/
+
+#myCarousel{
+	background-color: #FF4545;
+}
+
+#myCarousel h1{
+color: white;
+font-size: 3rem;
+}
+#myCarousel h5{
+color: white;
+font-size: 1.5rem;	
+}
+.carousel-caption{
+	text-align: left;
+	left: 10%;
+	top: 130px;
+	right: unset;
+	position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+#myCarousel .myButton{
+	padding: 8px;
+	border: 2px solid white;
+	color: white;
+	background: unset;
+	text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+#myCarousel .myButton:hover{
+	background-color: white;
+	color: #FF4545;
+	text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+/*--------------------COLLECTION----------------------*/
+
+.section-title{
+	text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.collection .card-body{
+	position: absolute;
+	top: 40%;
+}
+
+.collection .card{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.collection .card-title {
+	width: 55%;
+	text-align: center;
+	height: 40px;
+	margin: auto;
+	border-radius: 20px;
+	font-weight: bolder;
+	line-height: 40px;
+	height: 40px;
+    margin: auto;
+    color: white;
+}
+
+.collection .card .img_frame{
+	width: 100%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+}
+
+.collection .btn-primary {
+	background-color: unset;
+	margin-top: 10px;
+	border: 1px white solid;
+}
+
+.collection .card:hover img {
+    transform: scale(1.2);
+}
+.collection .card::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 500ms ease-in-out;
+}
+.collection .card:hover::after{
+	opacity: 1;
+	visibility: visible;
+}
+.collection .card:hover .card-title{
+    background-color: white;
+    color: var(--black);
+    transition: all 500ms ease-in-out;
+}
+  .collection  .card:hover .btn-primary{
+     background-color: #FF4545;
+     transition: all 500ms ease-in-out;
+     border: unset;
+    
+}
+.collection  img{
+	width: 100%;
+	transition: all 500ms ease-in-out;
+}
+
+
+/*--------------------NEW PRODUCT----------------------*/
+
+.product .img_frame{
+	overflow: hidden;
+}
+
+.product .img_frame img{
+	aspect-ratio: 1/1;
+}
+
+.product .card{
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.product .card-title{
+	text-align: center;
+	height: 40px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.product .card-body{
+	text-align: center;
+	flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.product .new_price{
+color: blue;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.product .old_price{
+color: red;
+font-size: 1.0rem;
+font-weight: bold;
+text-decoration: line-through;	
+}
+
+.product .side-icons{
+	position: absolute;
+	right: 0;
+	top: 30%;
+	display: flex;
+	transform: translate(80%, -50%);
+	flex-direction: column;
+	padding: 1rem;
+    transition: all 500ms ease-in-out;
+}
+
+
+.product .addCart{
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.8rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,25%);
+    transition: all 300ms ease-in-out;
+    font-size: 2rem;
+    z-index: 5;
+    margin: 3px;
+}
+
+.product .side-icons span{
+	font-size: 1.4rem;
+	background-color: white;
+	border-radius: 50%;
+	margin: 0.5rem;
+    padding: 0.3rem 0.75rem 0.3rem 0.85rem;
+    transition: all 300ms ease-in-out;
+}
+
+.product .side-icons span:hover{
+	color: white;
+	background-color: #FF4545;
+}
+
+.product .card:hover .side-icons{
+    transform: translate(0%, -50%);
+}
+
+.product .card:hover .addCart{
+    border-radius: 1rem 0 0 0;
+    transition: all 300ms ease-in-out;
+}
+.product .addCart:hover{
+	color: white;
+	background-color: #FF4545;
+	transition: all 200ms ease-in-out;
+}
+
+/*--------------------ADVERTISEMENT----------------------*/
+
+.advert_image{
+	aspect-ratio: 1/1;
+	width: 100%;
+}
+.advert_container{
+	position: relative;
+}
+
+
+.advert_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    font-size: 1.0rem;
+    display: block;
+}
+.advertisement .left{
+    right: 10%;
+}
+.advertisement .right{
+    left: 10%;
+}
+
+.advert_container::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #df4a4a66;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 500ms ease-in-out;
+}
+
+.advert_container:hover::after{
+	opacity: 1;
+	visibility: visible;
+}
+
+.advert_container:hover .advert_text{
+    color: white;
+}
+
+/*--------------------PARTNER----------------------*/
+
+#sliders_frame{
+	background-color: grey;
+	border: 2px double #222;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+}
+
+.img_partner{
+	height: 100%;
+	margin: 5px;
+}
+
+
+/*--------------------FOOTER----------------------*/
+
+footer{
+	color: white;
+    background-color: #222;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.menu-list{
+	list-style-type: none;
+	padding: unset;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+/*--------------------------------------------------------------------------------FILE CONTACT HTML--------------------------------------------------------------------------------------------------------*/
+.content .input-group-text{
+    width: 40px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}

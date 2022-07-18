@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<title>
+		Du lịch số 1 Việt Nam
+	</title>
+	<style type="text/css">
+
+
+		#wrapper{
+			width: 1200;
+		}
+
+		/*CHỈNH HEADER*/
+		#header{
+			width: 100%;
+		}
+
+		#logo{
+			width: 20%;
+			float: left;
+			height: 250px;
+		}
+		#logo_img{
+			width: 100%;
+			height: 250px;
+		}
+		#banner{
+			width: 80%;
+			float: left;
+			height: 250px;
+		}
+		#banner_img{
+			height: 250px;
+			width: 100%;
+		}
+		
+		#div_clear{
+			padding: unset;
+			margin: unset;
+		}
+
+		@media screen and (max-width: 768px){
+			#logo{
+				display: none;
+			}
+			#banner{
+				width: 100%;
+			}
+			#menu{
+				display: none;
+			}
+			#content{
+				width: 80%;
+				margin: auto;
+			}
+			#left,#right{
+				display: none;
+			}
+			.content_item{
+				width: 100%;
+			}
+
+		}
+
+		/*CHỈNH MENU*/
+		#menu{
+			width: 100%;
+			height: 40px;
+		}
+
+		#menu ul {
+			width: 100%;
+			padding: unset;
+		}
+
+		.menu_item{
+			display: inline-block;
+			width: 16%;
+			height: 40px;
+			text-align: center;
+		}
+
+		.menu_item a{
+			text-decoration: none;
+			font-size: 21px;
+			font-weight: bolder;
+			color: #222222;
+			text-align: center;
+			justify-content: center;
+			line-height: 40px;
+		}
+
+		.menu_item:hover a{
+			color: red;
+		}
+
+		.menu_item:hover{
+			background-color: #DDDDDD;
+			box-shadow: 2px 2px 2px 2px;
+		}
+
+
+
+
+		.img_slider{
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+			border: 1px double black;
+		}
+
+		.img_slider_item{
+			aspect-ratio: 4/3;
+			width: 100px;
+			border-radius: 	10px;
+			margin: 10px;
+		}
+
+
+
+		/*Chỉnh phần main_content*/
+		#main_content{
+			width: 100%;
+		}
+		#left,#right{
+			width: 20%;
+			float: left;
+		}
+		#content{
+			width: 60%;
+			float: left;
+		}
+
+		.content_item{
+			width: 45%;
+			float: left;
+			text-align: center;
+			margin: 10px;
+			border-radius: 30px;
+			box-shadow: 2px 2px 2px 2px;
+			padding: 10px;
+		}
+
+		/*.item_img{
+			width: 100%;
+			aspect-ratio: 16/10;
+		}*/
+
+		.img_holder{
+			overflow: hidden;
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+			border-radius: 30px;
+		}
+
+		.item_img:hover{
+			transform: scale(1.11);
+			transition: 200ms ease-in-out;
+		}
+
+		.item_title{
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.item_descriptions{
+			height: 70px;
+			text-align: justify;
+			overflow-x: unset;
+		}
+
+		.new_price{
+			font-size: 20px;
+			color: blue;
+		}
+
+		.old_price{
+			text-decoration: line-through;
+			color: darkred;
+			font-size: 18px;
+		}
+
+		.content_item button{
+			width: 60%;
+			height: 40px;
+			font-size: 18px;
+			border-radius: 10px;
+		}
+
+		.content_item button:hover{
+			color: white;
+			background-color: red;
+		}
+
+		/*Chỉnh Footer*/
+		#footer{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo"><img id="logo_img" src="images/LOGO.jpeg" alt="LOGO">
+			</div>
+			<div id="banner"><img id="banner_img" src="images/banner.jpg" alt="LOGO"></div>
+		</div>
+
+		<div id="div_clear" style="clear:both;"></div>
+
+		<div id="menu">
+			<ul>
+				<li class=menu_item><a href="#">Trang chủ</a></li>
+				<li class=menu_item><a href="#">Địa điểm</a></li>
+				<li class=menu_item><a href="#">Khách sạn</a></li>
+				<li class=menu_item><a href="#">Chuyến bay</a></li>
+				<li class=menu_item><a href="#">Khuyến mại</a></li>
+				<li class=menu_item><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+
+		<div id="div_clear" style="clear:both;"></div>
+	
+		<div class="img_slider jumbotron">
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo01.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo02.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo03.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo04.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo05.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo06.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo01.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo02.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo03.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle" src="images/photo04.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle alert-dark" src="images/photo05.jpg"></div>
+		<div> <img class="img_slider_item img-thumbnail rounded-circle alert-danger" src="images/photo06.jpg"></div>
+		</div>
+		<div id="div_clear" style="clear:both;"></div>
+
+
+		<div id="main_content">
+			<!-- MENU LEFT -->
+			<div id="left">
+				<dl>
+					<dt>
+						ĐỊA ĐIỂM
+						<dd>Vịnh Hạ Long</dd>
+						<dd>Chùa Bái Đính</dd>
+						<dd>Sapa</dd>
+					</dt>
+					<dt>
+						KHÁCH SẠN
+						<dd>FLC Đà Nẵng</dd>
+						<dd>Mường Thanh</dd>
+						<dd>Công đoàn</dd>
+					</dt>
+					<dt>
+						CHUYẾN BAY
+						<dd>Hà Nội - Đà Nẵng</dd>
+						<dd>Hà Nội - Đà Lạt</dd>
+						<dd>Hà Nội - Phú Quốc</dd>
+					</dt>
+				</dl>
+			</div>
+			<!-- CONTENTS -->
+			<div id=content>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo03.jpg"></div>
+					<p class="item_title"> Hà Nội - Hội An 4 ngày 3 đêm</p>
+					<p class="item_descriptions">Đến Hội An, các bạn sẽ được khám phá thiên nhiên thơ mộng, tìm hiểu những phong tục tập quán, nghệ thuật dân gian, hòa mình vào lễ hội văn hóa và thưởng thức các món đặc sản tuyệt ngon.</p>
+					<p>
+						<span class="new_price">2.500.000 VND</span>
+						<span class="old_price">3.000.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo04.jpg"></div>
+					<p class="item_title"> Hà Nội - Đà Lạt 4 ngày 3 đêm</p>
+					<p class="item_descriptions">An Sơn Hồ Đà Lạt là một khu sinh thái ẩm thực với nhiều nét mới lạ. Nơi đây được ví như “Phượng Hoàng Cổ Trấn thu nhỏ” giữa lòng Đà Lạt mộng mơ.</p>
+					<p>
+						<span class="new_price">3.000.000 VND</span>
+						<span class="old_price">4.000.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo05.jpg"></div>
+					<p class="item_title"> Hà Nội - Sapa 4 ngày 3 đêm</p>
+					<p class="item_descriptions">Mùa đông ở Sapa được thoải mái, đơn giản nhưng thu hút mạnh mẽ nhiều khách du lịch trong và ngoài nước. Mùa đông Sapa mang vẻ đẹp giản dị nhưng lại có sức lôi cuốn rất lớn đối với du khách trong và ngoài nước.</p>
+					<p>
+						<span class="new_price">2.000.000 VND</span>
+						<span class="old_price">2.500.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo06.jpg"></div>
+					<p class="item_title"> Hà Nội - Ninh Bình 3 ngày 2 đêm</p>
+					<p class="item_descriptions">Giữa mảnh đất cố đô Hoa Lư (Ninh Bình), có một nơi được mệnh danh là “thiên đường nơi hạ giới” và được giới trẻ gọi là “Tuyệt Tình Cốc” Việt Nam.</p>
+					<p>
+						<span class="new_price">1.500.000 VND</span>
+						<span class="old_price">2.000.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo01.jpg"></div>
+					<p class="item_title"> Hà Nội - Phú Quốc 4 ngày 3 đêm</p>
+					<p class="item_descriptions">Khám phá đảo ngọc Phú Quốc cùng Postumtravel cho quý khách trải nghiệm tuyệt vời, uy tín. Tour du lịch Phú Quốc khởi hành từ Hà Nội, giá tốt, nhiều ưu đãi hấp dẫn</p>
+					<p>
+						<span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+				<div class="content_item">
+					<div class="img_holder"><img class="item_img img-thumbnail" src="images/photo02.jpg"></div>
+					<p class="item_title"> Hà Nội - Trung Quốc 5 ngày 4 đêm</p>
+					<p class="item_descriptions">Khám phá Lạc Dương - Kinh Đô 15 Triều Đại Trung Quốc - là một thành phố trực thuộc tỉnh (địa cấp thị) nằm ở phía tây tỉnh Hà Nam, Trung Quốc. Đây là một trong những đô thị đầu tiên của Trung Quốc, Lạc Dương cũng từng là thủ đô lớn khác của quốc gia này.</p>
+					<p>
+						<span class="new_price">15.000.000 VND</span>
+						<span class="old_price">20.000.000 VND</span>
+					</p>
+					<button>Thêm vào giỏ hàng</button>
+				</div>
+			</div>
+			<!-- MENU RIGHT -->
+			<div id="right">RIGHT HERE</div>
+		</div>
+		<div id="div_clear" style="clear:both;"></div>
+		<div id="footer">Bản quyền thuộc về tác giả</div>
+	</div>
+</body>
+</html>

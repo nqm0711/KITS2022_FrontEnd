@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IF DEMO</title>
+	<script type="text/javascript">
+		
+		function checkMonth(year,month) 
+		{
+			 var year = prompt('Nhập số năm');
+			 var year = parseInt(year);
+			 var month = prompt('nhập tháng')
+			 var month = parseInt(month);
+
+			 switch (month)
+			{
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12: alert('Có 31 ngày');break;
+				case 4:
+				case 6:
+				case 9:
+				case 11: alert('Có 30 ngày');break;
+				case 2: if (year %400 ==0 || year%4==0 && year%100 !=0)
+							{
+							 alert('Có 29 ngày');break;
+							}
+							else alert('Có 28 ngày');break;
+				default: alert('Tháng không hợp lệ');
+			}
+		}
+
+		function docSo(number){
+			switch (number)
+			{
+				case 0: return('Không'); break;
+				case 1: return('Một'); break;
+				case 2: return('Hai'); break;
+				case 3: return('Ba'); break;
+				case 4: return('Bốn'); break;
+				case 5: return('Năm'); break;
+				case 6: return('Sáu'); break;
+				case 7: return('Báy'); break;
+				case 8: return('Tám'); break;
+				case 9: return('Chín'); break;
+				default: return('Số không hợp lệ')
+
+			}
+		}
+
+
+		function writeNumber(number){
+			var number = parseInt(prompt('Nhập số từ 0-9'))
+			alert(docSo(number));
+		}
+
+
+	</script>
+</head>
+<body>
+<button onclick="checkMonth()">Kiểm tra số tháng !!!!</button>
+<button onclick="writeNumber()">Đọc số</button>
+</body>
+</html>

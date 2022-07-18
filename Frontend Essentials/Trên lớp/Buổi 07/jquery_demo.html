@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*$('#action').click(function(){
+				alert("Lets's go!!");
+			});
+			$('#tieude').click(function(){
+				alert("Tiêu đề được kích chuột!!");
+			});
+			$('.my_message').click(function(){
+				alert("Thông báo được kích chuột");
+			});*/
+		/*	$('#action').click(function(){
+				$("h3").addClass('my_style');
+			});
+			$('#release').click(function(){
+				$("h3").removeClass('my_style');
+			});
+			$('#switch').click(function(){
+				$("h3").toggleClass('my_style');
+			});
+			$('#switch2').click(function(){
+				$("h3").toggle();
+			});
+			$('#hide').click(function(){
+				$("h3").slideDown(1500, function(){});
+			});
+			$('#show').click(function(){
+				$("h3").show();
+			});
+			$('#togglePicture').click(function(){
+				$("#img").toggleClass("my_hidden");
+			});
+		*/
+			/*$('#action').click(function(){
+				$(".my_message").toggleClass("gachchan");;
+			});*/
+			$('#renameh3').click(function(){
+				alert($("h3").text())
+				$("h3").text(prompt('Tên mới cho h3 là'));;
+			});
+			$('#edithtml').click(function(){
+				alert($("#message").html())
+				$("#message").html(prompt('Html mới'));;
+			});
+			$(".my_message").click(function(){
+				alert('Nội dung vừa được click: '+$(this).text());
+			});
+			$('#action').click(function(){
+				$(".my_message").each(function(){
+					alert($(this).text())
+				});;
+			});
+
+		});
+
+
+	</script>
+
+	<style type="text/css">
+		.my_style{
+			background-color: grey;
+		}
+		.my_hidden{
+			display: none;
+		}
+		.my_reveal{
+			display: block;
+		}
+		#img{
+			width: 100%;
+			height: auto;
+		}
+		.gachchan{
+			text-decoration: underline;
+			background-color: darkred;
+		}
+	</style>
+</head>
+<body>
+	<h3 id="tieude">Jquery Demo</h3>
+	<div id=message>
+		<p class="my_message" id="my_id">Đây là ứng dụng JQuery đầu tiên của tôi.</p>
+		<p class="my_message">Được viết tại Trung tâm đào tạo Multicampus.</p>
+		<p class="my_message">Tài trợ bởi NIPA</p>
+	</div>
+
+	<div id="img_frame" style="width: 500px; height: 300px;">
+		<img id="img" src="https://metricleo.com/wp-content/uploads/2021/03/word-image-23.jpeg">
+	</div>
+
+	<button id="action">Action!</button>
+	<button id="release">Release!</button>
+	<button id="switch">Switch!</button>
+	<button id="hide">Hide!</button>
+	<button id="show">Show!</button>
+	<button id="switch2">Hide/Show</button>
+	<button id="togglePicture">Toggle Picture</button>
+	<button id=renameh3>Rename h3</button>
+	<button id="edithtml">Edit HTML</button>
+
+
+</body>
+</html>
